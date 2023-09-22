@@ -590,7 +590,15 @@ input {
   width: 100%;
   height: 100%;
   background-color: var(--NAVY-BLUE-modal, rgba(46, 47, 66, 0.4));
+  /* opacity: 0;
+  visibility: hidden;
+  pointer-events: none; */
 }
+/* .backdrop.is-open {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+} */
 .modal {
   position: absolute;
   top: 50%;
@@ -601,4 +609,27 @@ input {
   padding: 40px;
   border-radius: 4px;
   background-color: var(--DAIRY, #fcfcfc);
+}
+.close-btn-icon {
+  stroke: #2e2f42;
+}
+.close-btn {
+  background-color: transparent;
+  padding: 0;
+  line-height: 0;
+  position: absolute;
+  top: 24px;
+  right: 24px;
+  border-radius: 4px;
+  width: 24px;
+  height: 24px;
+  flex-shrink: 0;
+}
+.callback {
+  color: var(--NAVY-BLUE, #2e2f42);
+  text-align: center;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
 }

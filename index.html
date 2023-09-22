@@ -451,7 +451,111 @@
     </footer>
     <!-- BACKDROP -->
     <div class="backdrop">
-      <div class="modal"></div>
+      <div class="modal">
+        <button class="close-btn">
+          <svg
+            class="close-btn-icon"
+            width="8"
+            height="8"
+            aria-label="modal close icon"
+          >
+            <use href="./images/modal-icons.svg#icon-x-box"></use>
+          </svg>
+        </button>
+        <p class="callback">Leave your contacts and we will call you back</p>
+        <form class="review-form">
+          <div class="reviw-form-field-wrapper">
+            <label for="user-name" class="review-form-filed-label">Name</label>
+            <input
+              type="text"
+              class="review-form-input"
+              id="user-name"
+              name="user_name"
+              pattern="[a-zA-Zа-яА-Я]+"
+              title="Name"
+              required
+            />
+            <svg
+              class="review-form-filed-icon"
+              width="18"
+              height="18"
+              aria-label="user icon"
+            >
+              <use href="./images/form-icons.svg#icon-person"></use>
+            </svg>
+          </div>
+          <div class="reviw-form-field-wrapper">
+            <label for="user-phone" class="review-form-filed-label"
+              >Phone</label
+            >
+            <input
+              type="tel"
+              class="review-form-input"
+              id="user-phone"
+              name="user_phone"
+              pattern="[0-9]"
+              title="Phone"
+              required
+            />
+            <svg
+              class="review-form-filed-icon"
+              width="18"
+              height="24"
+              aria-label="phone icon"
+            >
+              <use href="./images/form-icons.svg#icon-phone"></use>
+            </svg>
+          </div>
+          <div class="reviw-form-field-wrapper">
+            <label for="user-mail" class="review-form-filed-label">Email</label>
+            <input
+              type="email"
+              class="review-form-input"
+              id="user-mail"
+              name="user_mail"
+              required
+            />
+            <svg
+              class="review-form-filed-icon"
+              width="18"
+              height="24"
+              aria-label="mail icon"
+            >
+              <use href="./images/form-icons.svg#icon-mail"></use>
+            </svg>
+          </div>
+          <div class="reviw-form-field-wrapper">
+            <label for="user-comment" class="review-form-filed-label">
+              Comment
+            </label>
+            <textarea
+              name="user_comment"
+              id="user-comment"
+              class="review-form-comment"
+              placeholder="Text input"
+            >
+            </textarea>
+          </div>
+          <div class="review-form-checkbox-wrapper">
+            <input
+              type="checkbox"
+              class="review-form-checkbox"
+              id="user-privacy"
+              required
+              name="user_privacy"
+              value="true"
+            />
+            <label for="user-privacy" class="review-form-checkbox-label">
+              <span class="review-form-own-checkbox"></span>
+              I accept the terms and conditions of the
+              <a href="" class="review-form-privacy-link"
+                >Privacy Policy</a
+              ></label
+            >
+          </div>
+          <button class="review-form-submit" type="submit">Send</button>
+        </form>
+      </div>
     </div>
   </body>
 </html>
