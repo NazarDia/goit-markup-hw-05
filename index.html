@@ -433,11 +433,17 @@
             </li>
           </ul>
         </div>
-        <div>
+        <div class="subscribe-form">
           <p class="form-text">Subscribe</p>
           <form class="footer-form">
-            <label for="email">
-              <input type="text" name="email" id="email" placeholder="E-mail" />
+            <label class="email" for="email">
+              <input
+                type="email"
+                name="email"
+                id="email"
+                placeholder="E-mail"
+                class="footer-form-input"
+              />
             </label>
             <button type="submit" class="form-button">
               Subscribe
@@ -465,67 +471,73 @@
         <p class="callback">Leave your contacts and we will call you back</p>
         <form class="review-form">
           <div class="reviw-form-field-wrapper">
-            <label for="user-name" class="review-form-filed-label">Name</label>
-            <input
-              type="text"
-              class="review-form-input"
-              id="user-name"
-              name="user_name"
-              pattern="[a-zA-Zа-яА-Я]+"
-              title="Name"
-              required
-            />
-            <svg
-              class="review-form-filed-icon"
-              width="18"
-              height="18"
-              aria-label="user icon"
-            >
-              <use href="./images/form-icons.svg#icon-person"></use>
-            </svg>
+            <label for="user-name" class="review-form-field-label">Name</label>
+            <div class="review-form-input-wrapper">
+              <input
+                type="text"
+                class="review-form-input"
+                id="user-name"
+                name="user_name"
+                pattern="[a-zA-Zа-яА-Я]+"
+                title="Name"
+                required
+              />
+              <svg
+                class="review-form-field-icon"
+                width="18"
+                height="18"
+                aria-label="user icon"
+              >
+                <use href="./images/form-icons.svg#icon-person"></use>
+              </svg>
+            </div>
           </div>
           <div class="reviw-form-field-wrapper">
-            <label for="user-phone" class="review-form-filed-label"
+            <label for="user-phone" class="review-form-field-label"
               >Phone</label
             >
-            <input
-              type="tel"
-              class="review-form-input"
-              id="user-phone"
-              name="user_phone"
-              pattern="[0-9]"
-              title="Phone"
-              required
-            />
-            <svg
-              class="review-form-filed-icon"
-              width="18"
-              height="24"
-              aria-label="phone icon"
-            >
-              <use href="./images/form-icons.svg#icon-phone"></use>
-            </svg>
+            <div class="review-form-input-wrapper">
+              <input
+                type="tel"
+                class="review-form-input phone"
+                id="user-phone"
+                name="user_phone"
+                pattern="[0-9]"
+                title="Phone"
+                required
+              />
+              <svg
+                class="review-form-field-icon"
+                width="18"
+                height="24"
+                aria-label="phone icon"
+              >
+                <use href="./images/form-icons.svg#icon-phone"></use>
+              </svg>
+            </div>
           </div>
           <div class="reviw-form-field-wrapper">
-            <label for="user-mail" class="review-form-filed-label">Email</label>
-            <input
-              type="email"
-              class="review-form-input"
-              id="user-mail"
-              name="user_mail"
-              required
-            />
-            <svg
-              class="review-form-filed-icon"
-              width="18"
-              height="24"
-              aria-label="mail icon"
-            >
-              <use href="./images/form-icons.svg#icon-mail"></use>
-            </svg>
+            <label for="user-mail" class="review-form-field-label">Email</label>
+            <div class="review-form-input-wrapper">
+              <input
+                type="email"
+                class="review-form-input mail"
+                id="user-mail"
+                name="user_mail"
+                required
+              />
+              <svg
+                class="review-form-field-icon"
+                width="18"
+                height="24"
+                aria-label="mail icon"
+              >
+                <use href="./images/form-icons.svg#icon-mail"></use>
+              </svg>
+            </div>
           </div>
           <div class="reviw-form-field-wrapper">
-            <label for="user-comment" class="review-form-filed-label">
+            <label for="user-comment" class="review-form-field-label">
               Comment
             </label>
             <textarea
