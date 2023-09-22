@@ -665,7 +665,7 @@ input {
   width: 360px;
 }
 .review-form-field-wrapper {
-  margin-bottom: 16px;
+  margin-bottom: 8px;
 }
 .review-form-field-label {
   color: var(--LIGHT-SLATE, #8e8f99);
