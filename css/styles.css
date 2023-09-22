@@ -665,7 +665,7 @@ input {
   width: 360px;
 }
 .review-form-field-wrapper {
-  margin-bottom: 8px;
+  margin-bottom: 16px;
 }
 .review-form-field-label {
   color: var(--LIGHT-SLATE, #8e8f99);
@@ -703,7 +703,7 @@ input {
   border-color: #4d5ae5;
   outline: transparent;
 }
-.review-form-field-icon:focus::after {
+.review-form-input:focus + .review-form-field-icon {
   fill: #4d5ae5;
 }
 .review-form-comment {
